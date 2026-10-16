@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopFlows.Application\ShopFlows.Application.csproj" />
+    <ProjectReference Include="..\ShopFlows.Domain\ShopFlows.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

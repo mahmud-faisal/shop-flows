@@ -1,7 +1,12 @@
-﻿// PatternKatas: one folder per pattern, each a standalone, framework-free demo.
+using PatternKatas.RepositoryUnitOfWork;
+
+// PatternKatas: one folder per pattern, each a standalone, framework-free demo.
 // Run a kata with: dotnet run --project PatternKatas -- <PatternName>
 
-var katas = new Dictionary<string, Action>(StringComparer.OrdinalIgnoreCase);
+var katas = new Dictionary<string, Action>(StringComparer.OrdinalIgnoreCase)
+{
+    ["RepositoryUnitOfWork"] = RepositoryUnitOfWorkKata.Run,
+};
 
 if (args.Length == 0 || !katas.TryGetValue(args[0], out var run))
 {
